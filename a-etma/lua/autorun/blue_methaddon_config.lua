@@ -1,10 +1,4 @@
----------------------------
-/////Electron-Networks/////
----/Coded-By-Bluerunner\---
----\STEAM_0:0:53754798 /---
-/////Electron-Networks/////
-
-
+--took this text from another script liked the look of it idk dont judge me lol or do
 surface.CreateFont("HR_CR_BuyerFont", {
 	font = "Arial",
 	size = 48,
@@ -27,10 +21,11 @@ surface.CreateFont("HR_CR_BuyerFont", {
 resource.AddFile("resource/fonts/Roboto-Regular.ttf")
 print("[Bread]Font is included")
 function clearInv(ply)
-	if ply.numberOfBread != nil or ply.numberOfWine != nil or ply.numberOfOil then
+	if ply.numberOfBread != nil or ply.numberOfWine != nil or ply.numberOfOil or ply.numberOfScrap != nil then
 		ply.numberOfBread = 0
 		ply.numberOfWine = 0
 		ply.numberOfOil = 0
+		ply.numberOfScrap = 0
 	end
 end
 hook.Add("DoPlayerDeath","clearBreadDeath",function(ply)
